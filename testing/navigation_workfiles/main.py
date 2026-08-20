@@ -126,7 +126,7 @@ def load_embeddings():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     print(device)
-    image_path = '/media/kravtandr/SSD_1TB/Drone_nav/map/test/test_map_crop.png'
+    image_path = '/media/lsrkn/SSD_1TB/Drone_nav/map/test/test_map_crop.png'
     full_map = cv2.imread(image_path)
     full_map = cv2.cvtColor(full_map, cv2.COLOR_BGR2RGB)
     # координаты тайлов
@@ -157,8 +157,8 @@ def load_embeddings():
             return image, (x, y)
     encoder = Encoder(encoded_space_dim=256)
     decoder = Decoder(encoded_space_dim=256)
-    best_decoder = torch.load('/media/kravtandr/SSD_1TB/Drone_nav/maks/best_decoder_02_08.pth')
-    best_encoder = torch.load('/media/kravtandr/SSD_1TB/Drone_nav/maks/best_encoder_02_08.pth')
+    best_decoder = torch.load('/media/lsrkn/SSD_1TB/Drone_nav/maks/best_decoder_02_08.pth')
+    best_encoder = torch.load('/media/lsrkn/SSD_1TB/Drone_nav/maks/best_encoder_02_08.pth')
     encoder.load_state_dict(best_encoder)     
     decoder.load_state_dict(best_decoder)
 
