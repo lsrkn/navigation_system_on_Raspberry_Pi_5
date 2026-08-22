@@ -20,7 +20,6 @@ DRONE/
 
 
 ##### Дорожная карта проекта
-https://github.com/users/lsrkn/projects/1
 ![Дорожная карта проекта](https://github.com/users/lsrkn/projects/1)
 
 
