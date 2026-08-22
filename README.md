@@ -17,6 +17,8 @@ DRONE/
 │   └── test_camera.py    # Тестирование камеры
 └── train/                 # Скрипты для обучения
 ```
+##### Дорожная карта проекта
+https://github.com/users/lsrkn/projects/1
 
 
 ##### Основные файлы
